@@ -1,15 +1,13 @@
-function firstName(firstName) {
-    return firstName;
+firstName = (firstName) => {
+    return firstName.toUpperCase();
 }
 
-function lastName(lastName) {
-    return lastName;
+const lastName = (lastName) => {
+    return lastName.toLowerCase();
 }
 
-console.log(firstName());
-console.log(lastName());
+console.log(firstName("asmir"));
+console.log(lastName("SULEJMANOVIC"));
 
-module.exports = {
-    firstName, 
-    lastName
-}
+exports.firstName = firstName;
+exports.lastName = lastName;
